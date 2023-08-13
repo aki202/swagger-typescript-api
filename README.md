@@ -55,6 +55,7 @@ Options:
   --union-enums                 generate all "enum" types as union types (T1 | T2 | TN) (default: false)
   --add-readonly                generate readonly properties (default: false)
   --route-types                 generate type definitions for API routes (default: false)
+  --full-response-types         generate type definitions for responses across all HTTP statuses (default: false)
   --no-client                   do not generate an API class
   --enum-names-as-values        use values in 'x-enumNames' as enum values (not only as keys) (default: false)
   --extract-request-params      extract request params to data contract (Also combine path params and query params into one object) (default: false)
@@ -129,6 +130,7 @@ generateApi({
   generateClient: true,
   generateRouteTypes: false,
   generateResponses: true,
+  generateFullResponses: true,
   toJS: false,
   extractRequestParams: false,
   extractRequestBody: false,

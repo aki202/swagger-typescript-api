@@ -45,6 +45,8 @@ class CodeGenConfig {
   /** CLI flag */
   generateRouteTypes = false;
   /** CLI flag */
+  generateFullResponseTypes = false;
+  /** CLI flag */
   generateClient = true;
   /** CLI flag */
   generateUnionEnums = false;

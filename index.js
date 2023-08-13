@@ -79,6 +79,12 @@ const program = cli({
       internal: { name: 'generateRouteTypes' },
     },
     {
+      flags: '--full-response-types',
+      description: 'generate type definitions for responses across all HTTP statuses',
+      default: codeGenBaseConfig.generateFullResponseTypes,
+      internal: { name: 'generateFullResponseTypes' },
+    },
+    {
       flags: '--no-client',
       description: 'do not generate an API class',
       default: codeGenBaseConfig.generateClient,

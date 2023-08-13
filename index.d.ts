@@ -32,6 +32,11 @@ interface GenerateApiParamsBase {
   generateRouteTypes?: boolean;
 
   /**
+   * generate type definitions for responses across all HTTP statuses (default: false)
+   */
+  generateFullResponseTypes?: boolean;
+
+  /**
    * do not generate an API class
    */
   generateClient?: boolean;
@@ -544,6 +549,7 @@ export interface GenerateApiConfiguration {
     generateResponses: boolean;
     defaultResponseAsSuccess: boolean;
     generateRouteTypes: boolean;
+    generateFullResponseTypes: boolean;
     generateClient: boolean;
     generateUnionEnums: boolean;
     swaggerSchema: object;

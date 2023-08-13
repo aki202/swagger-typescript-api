@@ -20,4 +20,7 @@ export namespace <%~ routeNamespace %> {
   export type RequestBody = <%~ (payload && payload.type) || 'never' %>;
   export type RequestHeaders = <%~ (headers && headers.type) || '{}' %>;
   export type ResponseBody = <%~ route.response.type %>;
+  <% if (config.generateFullResponseTypes) { %>
+  export type ResponseFull = <%~ route.response.fullTypes %>;
+  <% } %>
 }
